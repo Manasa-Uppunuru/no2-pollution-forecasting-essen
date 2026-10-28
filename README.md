@@ -24,6 +24,12 @@ Two models were developed and compared:
 
 ---
 
+## For reviewers
+
+Start with [Analysis.ipynb](Analysis.ipynb) for the model analysis and [Data_clean_EDA.ipynb](Data_clean_EDA.ipynb) for data preparation. The repository includes saved data, so you can inspect the work without an API key. A fresh data collection run requires your own OpenAQ access; do not commit credentials.
+
+This is an academic forecasting study, not a deployed air-quality advisory service. The numbers below are reported project results; check the notebooks for the evaluated target scale, transformations, split, and forecast horizons before interpreting the error values as physical concentrations. Results have not been independently reproduced here.
+
 ## 📊 Key Results
 
 | Model | MAE (avg) | RMSE (avg) |
@@ -115,7 +121,7 @@ pip install openaq pandas numpy xgboost statsmodels matplotlib seaborn jupyter
 ### Steps
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/no2-pollution-forecasting-essen.git
+git clone https://github.com/Manasa-Uppunuru/no2-pollution-forecasting-essen.git
 cd no2-pollution-forecasting-essen
 ```
 
@@ -125,7 +131,8 @@ cd no2-pollution-forecasting-essen
 ```
 1. Raw_to_CSV.ipynb          → collect & save data
 2. Data_clean_EDA.ipynb      → clean & explore data  
-3. Measurements_data.ipynb   → train models & evaluate
+3. Measurements_data.ipynb   → inspect feature preparation and modelling workflow
+4. Analysis.ipynb            → inspect model analysis and reported results
 ```
 
 ---
